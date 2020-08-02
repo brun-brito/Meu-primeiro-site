@@ -6,6 +6,7 @@
     }
 
     /*Menu*/
+
     .cabeçalho {
         height: 60px;
         width: 100%;
@@ -35,6 +36,7 @@
     }
 
     /*itens do menu*/
+
     .menu li {
         float: left;
         font-size: 18px;
@@ -42,6 +44,7 @@
     }
 
     /*links do menu*/
+
     .menu li a {
         color: initial;
         text-decoration: initial;
@@ -49,6 +52,7 @@
     }
 
     /*sombra dos links*/
+
     .menu li:hover {
         background-color: #b89d06;
     }
@@ -93,10 +97,11 @@
         /*border-radius: 100px;*/
         padding: 3px;
         color: wheat;
-        text-shadow: none;        
+        text-shadow: none;
     }
 
     /*sombra do link*/
+
     #link:hover {
         background-color: rgb(170, 147, 17);
     }
@@ -105,6 +110,7 @@
         float: right;
         margin-right: 50;
     }
+
     #im1 {
         height: 100;
         width: 550;
@@ -123,23 +129,22 @@
         text-decoration: underline;
         padding-right: 190;
         margin-top: 25;
-        
     }
 
     #video {
         width: 500;
-        height: 300; 
+        height: 300;
         float: right;
         margin: 70 -380 0 0
     }
 
-    #corintro{
+    #corintro {
         background-color: rgb(255, 214, 101);
     }
 
-    #intro {        
+    #intro {
         padding-top: 33px;
-        font-size: 21;        
+        font-size: 21;
     }
 
     .paragrafos {
@@ -148,27 +153,20 @@
         padding-top: 0;
         font-size: 19;
         float: left;
-              
         /*background-color: rgb(229, 183, 53);*/
-    }
-
-    #colunaum {
-        
     }
 
     #colunadois {
         float: right;
     }
 
-    .paragrafoum {}
-
     #logoO1 {
-        width: 70px;}
+        width: 70px;
+    }
+
     .objetivoum {
         margin: 0;
     }
-
-    .objetivodois {}
 
     #significado {
         text-transform: none;
