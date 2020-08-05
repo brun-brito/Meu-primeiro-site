@@ -5,45 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site ODS</title>
+    <meta name="author" content="Bruno Brito">
     <link href="Estilo.css" rel="stylesheet" media="all" />
 </head>
 
 <body>
-    <section class="cabeçalho">
-        <header>
-            <div id="logo"><img src="Imagens/LogoFome.png" alt="Logo-Meu Site" /></div>
-            <ul class="menu">
-                <li><a href="#intro">Explicação</a></li>
-                <li><a href="#im1">Vídeo IBGE</a></li>
-                <li><a href="#rodape">Sobre</a></li>
-                <li><a href="#capa">Topo</a></li>
-            </ul>
+    
+        <header class="cabeçalho">
+            <img id="logo" src="Imagens/LogoFome.png" alt="Logo-Meu Site"/>
+            <div class="barra">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#intro">Explicação</a></li>
+                        <li><a href="#im1">Vídeo IBGE</a></li>
+                        <li><a href="#rodape">Sobre</a></li>
+                        <li><a href="#capa">Topo</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </header>
-    </section>
 
     <section id="capa">
 
         <h1 id="titulo">
             O que são os ODS?</h1>
         <h2 id="subtitulo">Os Objetivos de Desenvolvimento Sustentável são17 metas globais,
-            estabelecidas pela ONU .<a id="link" href="https://nacoesunidas.org/pos2015/" target="_blanck">Saiba
+            estabelecidas pela ONU. <a id="link" href="https://nacoesunidas.org/pos2015/" target="_blanck">Saiba
                 Mais</a></h2>
 
     </section>
 
-    <!--Imagem 1 + Vídeo-->
-    <div id="caixa2">
-        <div id="im1">
-            <img src="Imagens/foto ods2.png" alt="imagem fome zero e agricultura sustentavel" />
-        </div>
-        <div>
-            <h1 id="tituloVideo">Vídeo Explicativo</h1>
-        </div>
-        <iframe id="video" src="https://www.youtube.com/embed/rvET4ADE8JQ" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <section id="corpo">
 
-    <section class="paragrafos">
+        <!--Imagem 1 + Vídeo-->
+        <div class="direita duas">
+            <div id="im1">
+                <a id="linkfoto" href="https://nacoesunidas.org/pos2015/ods2/" target="_blanck"><img
+                        src="Imagens/foto ods2.png" alt="imagem fome zero e agricultura sustentavel"></a>
+            </div>
+            <div class="">
+                <h1 id="tituloVideo">Vídeo Explicativo</h1>
+                <iframe id="video" src="https://www.youtube.com/embed/rvET4ADE8JQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
         <!--SUBLINHADO-->
         <div id="corintro">
             <div id="intro">
@@ -53,13 +61,15 @@
                 <p>Nesse site, você vai descobrir um pouco mais sobre o ODS #2, o qual indica meios para acabar com a
                     fome,
                     alcançar a segurança alimentar e a melhoria da nutrição, além de promover a agricultura sustentável.
-                    Ademais, é válido ressaltar que os ODS em um todo, possuem metas a serem cumpridas dentro dos
-                    próprios objetivos, são elas:
+                <p id="atençao"><span id="negrito">Confira o Vídeo ao lado para mais informações</span></p>
+                Ademais, é válido ressaltar que os ODS em um todo, possuem metas a serem cumpridas dentro dos
+                próprios objetivos, são elas:
+                </h3>
                 </p>
             </div>
         </div>
         <!--NEGRITO-->
-        <div id="colunaum">
+        <div class="esquerda duas coluna1">
             <div class="objetivoum">
                 <p><img id="logoO1" src="Imagens/LogoPrato.png" /><span id="negrito">Objetivo 1:</span>
                     Acabar com a fome e garantir o acesso de todas as pessoas a alimentos seguros, nutritivos e
@@ -67,69 +77,84 @@
                 </p>
             </div>
             <div class="objetivodois">
-                <p><span id="negrito">Objetivo 2:</span> Acabar com todas as formas de desnutrição até 2030, atingindo
+                <p><img id="logoO1" src="Imagens/xicara-de-cafe.png" /><span id="negrito">Objetivo 2:</span> Acabar com
+                    todas as formas de desnutrição até 2030, atingindo
                     as metas estabelecidas sobre nanismo e <a id="significado" href="#!"
                         title="Grau extremo de enfraquecimento"> caquexia </a>em crianças menores de cinco anos de
                     idade, até 2025, além de atender às necessidades nutricionais de adolescentes, gestantes, lactantes
                     e pessoas idosas; </p>
             </div>
             <div class="objetivotres">
-                <p><span id="negrito">Objetivo 3:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p><img id="logoO1" src="Imagens/maçã.png" /><span id="negrito">Objetivo 3:</span> Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit.
                     Praesentium nam sapiente, voluptatum aliquam
                     perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
                     asperiores veniam dolorem?</p>
             </div>
-            <div class="paragrafoquatro">
-                <p><span id="negrito">Objetivo 4:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div class="objetivooquatro">
+                <p><img id="logoO1" src="Imagens/hamburguer.png" /><span id="negrito">Objetivo 4:</span> Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit.
                     Praesentium nam sapiente, voluptatum aliquam
                     perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
                     asperiores veniam dolorem?</p>
             </div>
         </div>
-        <div id="colunadois">
+
+        <div class="esquerda duas coluna2">
             <div class="objetivocinco">
-                <p><span id="negrito">Objetivo 5:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p><img id="logoO1" src="Imagens/bolinho.png" /><span id="negrito">Objetivo 5:</span> Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit.
                     Praesentium nam sapiente, voluptatum aliquam
                     perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
                     asperiores veniam dolorem?</p>
             </div>
             <div class="objetivoseis">
-                <p><span id="negrito">Objetivo 6:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p><img id="logoO1" src="Imagens/abacaxi.png" /><span id="negrito">Objetivo 6:</span> Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit.
                     Praesentium nam sapiente, voluptatum aliquam
                     perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
                     asperiores veniam dolorem?</p>
             </div>
             <div class="objetivosete">
-                <p><span id="negrito">Objetivo 7:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p><img id="logoO1" src="Imagens/biscoitos.png" /><span id="negrito">Objetivo 7:</span> Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit.
                     Praesentium nam sapiente, voluptatum aliquam
                     perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
                     asperiores veniam dolorem?</p>
             </div>
             <div class="objetivooito">
-                <p><span id="negrito">Objetivo 8:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p><img id="logoO1" src="Imagens/bandeja.png" /><span id="negrito">Objetivo 8:</span> Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit.
                     Praesentium nam sapiente, voluptatum aliquam
                     perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
                     asperiores veniam dolorem?</p>
             </div>
         </div>
 
-
     </section>
-    <!--<div>
-        <img id="im3" src="Imagens/foto fome.jpg" />
-    </div>-->
 
     <footer id="rodape">
-        <div id="rodapeum">
+        <div class="rodapeum">
             <h1>Meu primeiro site</h1>
-            <p>Projeto desenvolvido durante o curso "Meu primeiro site", promovido pela Junior Achievement
-                Brasil e Microsoft.</p>
+            <p>Projeto desenvolvido durante o curso "Meu primeiro site",<br> promovido pela Junior Achievement
+                Brasil e Microsoft.
+            </p>
         </div>
-        <div id="rodapedois">
+        <div class="rodapedois">
             <h1>Créditos</h1>
-            <p>Ícone feito por
-                <a href="http://www.freepik.com" title="Freepik" target="_blanck">Freepik</a> from <a
-                    href="https://www.flaticon.com/br/" title="Flaticon" target="_blanck">www.flaticon.com</a></p>
+            <p>Ícones feitos por
+                <a id="F" href="http://www.freepik.com" title="Freepik" target="_blanck">Freepik </a>e <a id="F"
+                    href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect"
+                    target="_blanck">Pixel perfect</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"
+                    target="_blanck">www.flaticon.com</a></p>
+        </div>
+        <div class="rodapetres">
+            <h1>Contato</h1>
+            <p>
+                <img src="Imagens/email.png" alt="email">brunocaudebrito@hotmail.com <br>
+                <img src="Imagens/whatsapp.png" alt="whatsapp">(31) 98628-1212<br>
+                <img src="Imagens/instagram.png" alt="instagram">brun_brito
+            </p>
         </div>
     </footer>
 
