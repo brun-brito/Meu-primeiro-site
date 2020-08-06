@@ -28,9 +28,6 @@
         margin-left: 50px;
         max-height: 100%;
     }
-    #logo:hover{
-        background-color: lime;
-    }
 
     #logomenu, #menuP {
         visibility: hidden;
@@ -92,20 +89,12 @@
     }
 
     #subtitulo {
-        padding-top: 20px;
+        padding: 20px 0 30 0;
         text-align: center;
         color: rgb(255, 255, 255);
         text-shadow: black 2px -2px;
         font-size: 30px;
-        margin: 0 30% 0 30%;
-        padding-bottom: 30px;
-    }
-
-    #link {
-        /*border-radius: 100px;*/
-        padding: 3px;
-        color: wheat;
-        text-shadow: none;
+        margin: 0 23% 0 23%;
     }
 
     /*sombra do link*/
@@ -133,8 +122,9 @@
         width: 500;
         height: 300;
         float: right;
-        margin: 0 120 0 0;
+        margin: 0 15% 0 0;
         padding-top: 65px;
+        background-color: rgb(255, 214, 101);
     }
 
     #corintro {
@@ -274,10 +264,16 @@
         #linkfoto:hover {
             visibility: hidden;
         }
-        main {
-          margin: 0;
-          padding: 0; 
-          float: none;
+        .duas{
+            width: 98%;
+            float: none;
+            margin: 0 3 0 3;
+        }
+        #intro, .paragrafoum{
+            width: 100%;
+            float: none;
+            margin: 0 3 0 7;
+            padding: 0;
         }
         #video {
             padding: 0;
