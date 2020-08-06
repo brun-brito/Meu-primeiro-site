@@ -15,7 +15,7 @@
         background: white;
     }
 
-    #check {
+    #check, #check2,#check3, #check4, #check5 {
         display: none;
     }
 
@@ -28,6 +28,9 @@
         margin-left: 50px;
         max-height: 100%;
     }
+    #logo:hover{
+        background-color: lime;
+    }
 
     #logomenu, #menuP {
         visibility: hidden;
@@ -39,7 +42,6 @@
         margin-top: 0px;
         margin-right: 5%;
     }
-
     /*itens do menu*/
 
     .menu li {
@@ -272,11 +274,10 @@
         #linkfoto:hover {
             visibility: hidden;
         }
-        .corpo {
-          text-align: left;
+        main {
           margin: 0;
-          padding: 0;
-          
+          padding: 0; 
+          float: none;
         }
         #video {
             padding: 0;
@@ -330,7 +331,7 @@
         }
         #check:checked ~ #menuP #navMenuP a div{
             opacity: 1;
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
             transition-delay: .3s;
         }
     }
