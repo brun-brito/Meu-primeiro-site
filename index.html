@@ -4,140 +4,152 @@
     <!--COMENTÁRIO-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Site ODS</title>
     <meta name="author" content="Bruno Brito">
+    <script src="cssdiv.js"></script>
     <link href="Estilo.css" rel="stylesheet" media="all" />
 </head>
 
 <body>
-    
-        <header class="cabeçalho">
-            <img id="logo" src="Imagens/LogoFome.png" alt="Logo-Meu Site"/>
-            <div class="barra">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#intro">Explicação</a></li>
-                        <li><a href="#im1">Vídeo IBGE</a></li>
-                        <li><a href="#rodape">Sobre</a></li>
-                        <li><a href="#capa">Topo</a></li>
-                    </ul>
-                </nav>
-            </div>
 
-        </header>
+    <header class="cabeçalho">
+        <input type="checkbox" id="check">
+        <label for="check"><img id="logomenu" src="Imagens/Menu.png" alt="Logo-Menu" /></label>
+
+        <img id="logo" src="Imagens/LogoFome.png" alt="Logo-Meu Site" />
+        <!--MENU GRANDE-->
+        <div id="menuG">
+            <nav id="navMenuG">
+                <ul class="menu">
+                    <li><a href="#intro">Explicação</a></li>
+                    <li><a href="#metas">Metas</a></li>
+                    <li><a href="#rodape">Sobre</a></li>
+                    <li><a href="#capa">Topo</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--MENU PEQUENO-->
+        <div id="menuP">
+            <nav id="navMenuP">
+                <ul>
+                    <li><button><a id="a" href="#intro"><div>Explicação</div></a></button></li>
+                    <li><a id="a" href="#metas"><div>Metas</div></a></li>
+                    <li><a id="a" href="#rodape"><div>Sobre</div></a></li>
+                    <li><a id="a" href="#capa"><div>Topo</div></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
 
     <section id="capa">
 
         <h1 id="titulo">
-            O que são os ODS?</h1>
-        <h2 id="subtitulo">Os Objetivos de Desenvolvimento Sustentável são17 metas globais,
-            estabelecidas pela ONU. <a id="link" href="https://nacoesunidas.org/pos2015/" target="_blanck">Saiba
-                Mais</a></h2>
+            Fome de Igualdade</h1>
+        <h2 id="subtitulo">Nesse site, você vai descobrir um pouco mais sobre o ODS #2, o qual indica meios para acabar
+            com a
+            fome. Clique na imagem e saiba mais.</h2>
+        <div>
+            <div class="fotoods"><a id="linkfoto" href="https://nacoesunidas.org/pos2015/ods2/" target="_blanck"><img
+                        id="im1" src="Imagens/foto ods2.png" alt="imagem fome zero e agricultura sustentavel"></a>
+            </div>
+        </div>
 
     </section>
 
-    <section id="corpo">
+    <section class="corpo">
 
         <!--Imagem 1 + Vídeo-->
         <div class="direita duas">
-            <div id="im1">
-                <a id="linkfoto" href="https://nacoesunidas.org/pos2015/ods2/" target="_blanck"><img
-                        src="Imagens/foto ods2.png" alt="imagem fome zero e agricultura sustentavel"></a>
-            </div>
-            <div class="">
-                <h1 id="tituloVideo">Vídeo Explicativo</h1>
-                <iframe id="video" src="https://www.youtube.com/embed/rvET4ADE8JQ" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+            <iframe id="video" src="https://www.youtube.com/embed/rvET4ADE8JQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
         <!--SUBLINHADO-->
         <div id="corintro">
             <div id="intro">
-                <h1><span id="sublinhado">ODS #2: Fome Zero e Agricultura Sustentável</span></h1>
+                <h2><span id="sublinhado">Afinal, o quê são os ODS?</span></h2>
             </div>
             <div class="paragrafoum">
-                <p>Nesse site, você vai descobrir um pouco mais sobre o ODS #2, o qual indica meios para acabar com a
-                    fome,
-                    alcançar a segurança alimentar e a melhoria da nutrição, além de promover a agricultura sustentável.
-                <p id="atençao"><span id="negrito">Confira o Vídeo ao lado para mais informações</span></p>
-                Ademais, é válido ressaltar que os ODS em um todo, possuem metas a serem cumpridas dentro dos
-                próprios objetivos, são elas:
-                </h3>
+                <p>Os Objetivos de Desenvolvimento Sustentável são um conjunto de 17 metas globais,
+                    estabelecidas pela ONU, que compõem uma agenda mundial para a construção e implementação de
+                    políticas públicas que visam guiar a humanidade até 2030.
+                <p id="atençao"><span id="negrito">Confira o Vídeo para mais informações sobre a ODS #2.</span></p>
+                Ademais, é válido ressaltar que os ODS, em um todo, possuem metas a serem cumpridas. Em relação à fome,
+                são elas:
+
+
                 </p>
             </div>
         </div>
         <!--NEGRITO-->
-        <div class="esquerda duas coluna1">
-            <div class="objetivoum">
-                <p><img id="logoO1" src="Imagens/LogoPrato.png" /><span id="negrito">Objetivo 1:</span>
-                    Acabar com a fome e garantir o acesso de todas as pessoas a alimentos seguros, nutritivos e
-                    suficientes durante todo o ano, em particular os pobres e pessoas em situações vulneráveis até 2030;
-                </p>
+        <main id="metas">
+            <div class="esquerda duas coluna1">
+                <div class="objetivoum">
+                    <p><img id="logoO1" src="Imagens/LogoPrato.png" /><span id="negrito">Meta 1:</span>
+                        Acabar com a fome e garantir o acesso de todas as pessoas a alimentos seguros, nutritivos e
+                        suficientes durante todo o ano;
+                    </p>
+                </div>
+                <div class="objetivodois">
+                    <p><img id="logoO1" src="Imagens/xicara-de-cafe.png" /><span id="negrito">Meta 2:</span> Acabar
+                        com
+                        todas as formas de desnutrição até 2030, atingindo
+                        as metas estabelecidas sobre nanismo e <a id="significado" href="#!"
+                            title="Grau extremo de enfraquecimento"> caquexia </a>em crianças menores de cinco anos de
+                        idade, até 2025; </p>
+                </div>
+                <div class="objetivotres">
+                    <p><img id="logoO1" src="Imagens/maçã.png" /><span id="negrito">Meta 3:</span> Fazer com que
+                        produtividade agrícola e a renda de pequenos produtores de alimentos duplique até 2030;</p>
+                </div>
+                <div class="objetivooquatro">
+                    <p><img id="logoO1" src="Imagens/hamburguer.png" /><span id="negrito">Meta 4:</span> Garantir, até
+                        2030, a implementação de sistemas sustentáveis de produção alimentícia e a realização de
+                        práticas agrícolas que aumentem a produtividade, e que ajudem a manter os ecossistemas
+                        terrestres.</p>
+                </div>
             </div>
-            <div class="objetivodois">
-                <p><img id="logoO1" src="Imagens/xicara-de-cafe.png" /><span id="negrito">Objetivo 2:</span> Acabar com
-                    todas as formas de desnutrição até 2030, atingindo
-                    as metas estabelecidas sobre nanismo e <a id="significado" href="#!"
-                        title="Grau extremo de enfraquecimento"> caquexia </a>em crianças menores de cinco anos de
-                    idade, até 2025, além de atender às necessidades nutricionais de adolescentes, gestantes, lactantes
-                    e pessoas idosas; </p>
-            </div>
-            <div class="objetivotres">
-                <p><img id="logoO1" src="Imagens/maçã.png" /><span id="negrito">Objetivo 3:</span> Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit.
-                    Praesentium nam sapiente, voluptatum aliquam
-                    perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
-                    asperiores veniam dolorem?</p>
-            </div>
-            <div class="objetivooquatro">
-                <p><img id="logoO1" src="Imagens/hamburguer.png" /><span id="negrito">Objetivo 4:</span> Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit.
-                    Praesentium nam sapiente, voluptatum aliquam
-                    perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
-                    asperiores veniam dolorem?</p>
-            </div>
-        </div>
 
-        <div class="esquerda duas coluna2">
-            <div class="objetivocinco">
-                <p><img id="logoO1" src="Imagens/bolinho.png" /><span id="negrito">Objetivo 5:</span> Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit.
-                    Praesentium nam sapiente, voluptatum aliquam
-                    perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
-                    asperiores veniam dolorem?</p>
+            <div class="esquerda duas coluna2">
+                <div class="objetivocinco">
+                    <p><img id="logoO1" src="Imagens/bolinho.png" /><span id="negrito">Meta 5:</span> Manter a
+                        diversidade genética de sementes, plantas e animais, além de garantir o acesso e a repartição
+                        justa e equitativa dos benefícios decorrentes da utilização dos recursos genéticos e dos
+                        conhecimentos tradicionais;</p>
+                </div>
+                <div class="objetivoseis">
+                    <p><img id="logoO1" src="Imagens/abacaxi.png" /><span id="negrito">Meta 6:</span> Aumentar o
+                        investimento em infraestrutura rural e o desenvolvimento de tecnologias, como os bancos de genes
+                        de plantas e animais, para aumentar a capacidade de produção agrícola nos países emergentes;</p>
+                </div>
+                <div class="objetivosete">
+                    <p><img id="logoO1" src="Imagens/biscoitos.png" /><span id="negrito">Meta 7:</span> Corrigir e
+                        prevenir as restrições ao comércio e distorções nos mercados agrícolas mundiais, eliminando
+                        todas as formas de subsídios à exportação;</p>
+                </div>
+                <div class="objetivooito">
+                    <p><img id="logoO1" src="Imagens/bandeja.png" /><span id="negrito">Meta 8:</span> Adotar medidas
+                        para garantir o funcionamento adequado dos mercados de <a id="significado" href="#!"
+                            title="Produtos que funcionam como matéria-prima, que podem ser estocados sem perda de qualidade">
+                            commodities </a> de alimentos e seus derivados, além de facilitar o acesso oportuno à
+                        informação de mercado, inclusive sobre as reservas de alimentos, a fim de ajudar a limitar a
+                        alteração extrema dos preços dos alimentos.</p>
+                </div>
             </div>
-            <div class="objetivoseis">
-                <p><img id="logoO1" src="Imagens/abacaxi.png" /><span id="negrito">Objetivo 6:</span> Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit.
-                    Praesentium nam sapiente, voluptatum aliquam
-                    perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
-                    asperiores veniam dolorem?</p>
-            </div>
-            <div class="objetivosete">
-                <p><img id="logoO1" src="Imagens/biscoitos.png" /><span id="negrito">Objetivo 7:</span> Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit.
-                    Praesentium nam sapiente, voluptatum aliquam
-                    perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
-                    asperiores veniam dolorem?</p>
-            </div>
-            <div class="objetivooito">
-                <p><img id="logoO1" src="Imagens/bandeja.png" /><span id="negrito">Objetivo 8:</span> Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit.
-                    Praesentium nam sapiente, voluptatum aliquam
-                    perferendis unde at commodi maiores reiciendis ex iste voluptatem. Ea, temporibus velit eveniet odio
-                    asperiores veniam dolorem?</p>
-            </div>
-        </div>
+        </main>
 
     </section>
 
     <footer id="rodape">
         <div class="rodapeum">
-            <h1>Meu primeiro site</h1>
-            <p>Projeto desenvolvido durante o curso "Meu primeiro site",<br> promovido pela Junior Achievement
-                Brasil e Microsoft.
+            <h1>Site</h1>
+            <p>Projeto desenvolvido durante o curso "Meu primeiro site",<br> promovido pela <a id="F"
+                    href="https://www.jabrasil.org.br/" target="_blanck">Junior Achievement
+                    Brasil</a> e Microsoft.
             </p>
         </div>
         <div class="rodapedois">
@@ -149,7 +161,7 @@
                     target="_blanck">www.flaticon.com</a></p>
         </div>
         <div class="rodapetres">
-            <h1>Contato</h1>
+            <h1> Contato</h1>
             <p>
                 <img src="Imagens/email.png" alt="email">brunocaudebrito@hotmail.com <br>
                 <img src="Imagens/whatsapp.png" alt="whatsapp">(31) 98628-1212<br>
