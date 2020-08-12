@@ -1,8 +1,12 @@
-    body {
+   /* SHIFT+ ALT + A */
+   body {
         background-color: rgb(247, 228, 125);
         margin: 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         box-sizing: border-box;
+    }
+
+    body, input, textarea {
+        font: 500 1.6rem Poppins;
     }
 
     /*Menu*/
@@ -15,7 +19,7 @@
         background: white;
     }
 
-    #check, #check2,#check3, #check4, #check5 {
+    #check, #check2, #check3, #check4, #check5 {
         display: none;
     }
 
@@ -39,6 +43,7 @@
         margin-top: 0px;
         margin-right: 5%;
     }
+
     /*itens do menu*/
 
     .menu li {
@@ -76,6 +81,10 @@
         text-decoration: underline;
     }
 
+    #titulo, #subtitulo {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
     #titulo {
         text-align: center;
         padding: 150px 0 20px 0;
@@ -102,16 +111,18 @@
     #link:hover {
         background-color: rgb(170, 147, 17);
     }
-    .fotoods{
+
+    .fotoods {
         text-align: center;
     }
+
     #im1 {
         height: 96;
         width: 522;
     }
 
     #linkfoto {
-        padding: 85 5 0 5;
+        padding: 80 5 0 5;
     }
 
     #linkfoto:hover {
@@ -248,7 +259,7 @@
             padding: 7px;
         }
         #titulo {
-            margin: 0 10 0 10; 
+            margin: 0 10 0 10;
             padding-top: 25%;
         }
         #subtitulo {
@@ -257,19 +268,17 @@
         }
         #im1 {
             float: none;
-            display: block;
             width: 100%;
-            visibility: visible;
         }
         #linkfoto:hover {
             visibility: hidden;
         }
-        .duas{
+        .duas {
             width: 98%;
             float: none;
             margin: 0 3 0 3;
         }
-        #intro, .paragrafoum{
+        #intro, .paragrafoum {
             width: 100%;
             float: none;
             margin: 0 3 0 7;
@@ -302,30 +311,29 @@
             position: relative;
             transition: all .2s linear;
             left: -300px;
-            z-index: 11;    
+            z-index: 11;
             margin-top: 55px;
             background-color: #b89d06;
         }
         #navMenuP {
             top: 40px;
         }
-        
         #a {
             text-decoration: none;
-            font-size: 25px; 
-            color: black;            
+            font-size: 25px;
+            color: black;
         }
         #navMenuP a div {
-            border-bottom: 2px solid black; 
+            border-bottom: 2px solid black;
             margin-bottom: 25px;
         }
         #navMenuP a div:hover {
             background-color: white;
         }
-        #check:checked ~ #menuP {
+        #check:checked~#menuP {
             transform: translateX(300px);
         }
-        #check:checked ~ #menuP #navMenuP a div{
+        #check:checked~#menuP #navMenuP a div {
             opacity: 1;
             margin-bottom: 10px;
             transition-delay: .3s;
